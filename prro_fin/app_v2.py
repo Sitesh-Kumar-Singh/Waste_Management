@@ -148,76 +148,66 @@ def chart_dry():
 
 @app.route("/mylink1")
 def clear_bar1():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_dry[0] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_dry,name = name_dry)
     
 @app.route("/mylink2")
 def clear_bar2():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_dry[1] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_dry,name = name_dry)
     
 @app.route("/mylink3")
 def clear_bar3():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_dry[2] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_dry,name = name_dry)
  
 @app.route("/mylink4")
 def clear_bar4():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_dry[3] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_dry,name = name_dry)
     
 @app.route("/mylink5")
 def clear_bar5():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_dry[4] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_dry,name = name_dry)
     
 @app.route("/mylink6")
 def clear_bar6():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_dry[5] = "0"
     return render_template('chart_v2.html',waste_per=waste_per_dry,name = name_dry)
     
 @app.route("/mylink1")
 def clear_bar7():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_wet[0] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_wet,name = name_wet)
     
 @app.route("/mylink2")
 def clear_bar8():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_wet[1] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_wet,name = name_wet)
    
 @app.route("/mylink3")
 def clear_bar9():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_wet[2] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_wet,name = name_wet)
  
 @app.route("/mylink4")
 def clear_bar10():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_wet[3] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_wet,name = name_wet)
     
 @app.route("/mylink5")
 def clear_bar11():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_wet[4] = "0" 
     return render_template('chart_v2.html',waste_per=waste_per_wet,name = name_wet)
     
 @app.route("/mylink6")
 def clear_bar12():
-    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
     waste_per_wet[5] = "0"
     return render_template('chart_v2.html',waste_per=waste_per_wet,name = name_wet)
     
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5001,debug="True")
+    waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
+
