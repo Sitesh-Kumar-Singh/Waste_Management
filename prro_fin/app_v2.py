@@ -208,6 +208,6 @@ def clear_bar12():
     
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5001,debug="True")
     waste_per_wet,name_wet,waste_per_dry,name_dry =get_per_waste()
+    app.run(host='0.0.0.0', port=5001,debug="True")
 
